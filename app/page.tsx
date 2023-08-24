@@ -14,9 +14,17 @@ export default function Home() {
       <h1 className="text-5xl font-bold">WASSSUUUUUP! ✌️</h1>
       <br />
       <p>
-        My name is <span className="font-bold">Jeff</span>. I'm a{' '}
-        <span className="font-bold">fullstack developer</span>. I like to work
-        on things I <span className="font-bold">believe</span> in.
+        My name is{' '}
+        <a
+          href="https://www.youtube.com/shorts/zQKqvcjCfhA"
+          target="_blank"
+          rel="noopener"
+          className="font-bold"
+        >
+          Jeff
+        </a>
+        . I'm a <span className="font-bold">fullstack developer</span>. I like
+        to work on things I <span className="font-bold">believe</span> in.
       </p>
       <br />
       <p>Let's go!</p>
