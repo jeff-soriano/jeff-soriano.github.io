@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <section className="py-6 px-12 flex flex-col items-center">
+    <section className="py-6 px-12 flex flex-col items-center text-center">
       <Image
         priority
         src="/images/profile.jpeg"

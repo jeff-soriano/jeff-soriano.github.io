@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950 flex justify-center`}
+        className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950 flex flex-col items-center`}
       >
         <div className="w-1/2">
           <nav className="z-10 text-sm">
@@ -35,7 +35,11 @@ export default function RootLayout({
               <p>Resume</p>
             </div>
           </nav>
-          <main>{children}</main>
+          <main className="min-h-screen">{children}</main>
+          <footer className="text-xs border-t p-4 text-center border-slate-200/20">
+            Designed and built by yours truly, using NextJS, Typescript, and
+            TailwindCSS :)
+          </footer>
         </div>
       </body>
     </html>
