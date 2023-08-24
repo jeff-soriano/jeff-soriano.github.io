@@ -16,22 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} flex min-h-screen flex-col items-center p-24`}
-      >
-        <nav className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex border-b border-gray-300">
-          <div className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto lg:p-4">
-            <p className="mr-8">My work</p>
-            <p className="mr-8">About me</p>
-            <p>Resume</p>
-          </div>
-        </nav>
-        <main className="border-b border-gray-300 p-4 min-h-screen">
-          {children}
-        </main>
-        <footer className="p-4">
-          <div>by Jeff Soriano</div>
-        </footer>
+      <body className={inter.className}>
+        <main>{children}</main>
       </body>
     </html>
   )
