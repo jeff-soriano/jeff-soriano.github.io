@@ -1,10 +1,13 @@
+import Image from 'next/image'
+import GifSection from './components/GifSection'
+
 export default function Experience() {
   return (
     <section className="py-6 px-12">
       <section className="mb-4">
         <h1 className="text-3xl font-bold">Boundless Immigration</h1>
         <br />
-        <ul>
+        <ul className="mb-2">
           <li className="mb-2">
             ⭐ At Boundless, I started out as a front-end engineer, but quickly
             grew to work in the back-end as well. While there I developed and
@@ -16,9 +19,37 @@ export default function Experience() {
             Rails, and postgreSQL
           </li>
         </ul>
+        Here's just a few things I worked on while I was there:
       </section>
       <section>
-        <div className="h-96 rounded bg-gray-200"></div>
+        <GifSection gif="b1b2" header="B1/B2 Travel Visa Questionnaire">
+          Questionnaire product that screens risk of denial when applying for
+          B1/B2 travel visa. Built in "just-in-time" components that explains to
+          customer why their risk may go up or down depending on answers.{' '}
+        </GifSection>
+        <GifSection gif="address-history" header="Address & Employment History">
+          Simple user interface with a lot going on in the background. Both
+          frontend and backend validation was written to ensure addresses were
+          inputted correctly, and that there were no overlaps in dates in order
+          to avoid getting possible rejections from USCIS
+        </GifSection>
+        <GifSection gif="doc-upload" header="Document Upload">
+          Document upload page for customers to upload supporting documents that
+          support their case in obtaining a visa. Each page contains
+          instructions for the type of document to upload. Documents were
+          securely uploaded to AWS S3.
+        </GifSection>
+        <GifSection gif="milestone-tracker" header="Milestone Tracker">
+          A "milestone tracker" to let customers who have completed their K1
+          visa application track further actions needed when obtaining a
+          marriaged-based green card in the future. Dates and inputs on the page
+          were dynamically altered based on customer input to certain fields.
+        </GifSection>
+        <GifSection gif="checkout" header="Checkout Page">
+          Checkout page that leads you down two options, paying for government
+          fees upfront or deciding to do that later. Integrated with Stripe and
+          SplitIt webhooks.
+        </GifSection>
       </section>
     </section>
   )
