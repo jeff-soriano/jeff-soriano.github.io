@@ -16,7 +16,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950`}
+      >
+        <nav className="z-10 text-sm">
+          <div className="flex justify-center pb-6 pt-8 ">
+            <p className="mr-8">About me</p>
+            <p className="mr-8">Experience</p>
+            <p className="mr-8">Side projects</p>
+            <p>Resume</p>
+          </div>
+        </nav>
         <main>{children}</main>
       </body>
     </html>
