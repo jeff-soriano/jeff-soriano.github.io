@@ -18,23 +18,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950`}
+        className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950 flex justify-center`}
       >
-        <nav className="z-10 text-sm">
-          <div className="flex justify-center pb-6 pt-8 ">
-            <Link className="mr-8" href="/">
-              About me
-            </Link>
-            <Link className="mr-8" href="/experience">
-              Experience
-            </Link>
-            <Link className="mr-8" href="/side-projects">
-              Side projects
-            </Link>
-            <p>Resume</p>
-          </div>
-        </nav>
-        <main>{children}</main>
+        <div className="w-1/2">
+          <nav className="z-10 text-sm">
+            <div className="flex justify-center pb-6 pt-8 ">
+              <Link className="mr-8" href="/">
+                About me
+              </Link>
+              <Link className="mr-8" href="/experience">
+                Experience
+              </Link>
+              <Link className="mr-8" href="/side-projects">
+                Side projects
+              </Link>
+              <p>Resume</p>
+            </div>
+          </nav>
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   )

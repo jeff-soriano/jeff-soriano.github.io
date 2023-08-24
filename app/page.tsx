@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section className="p-24 text-center">
+    <section className="py-24 px-12 text-center">
       <h1 className="text-5xl font-bold">WASSSUUUUUP! ✌️</h1>
       <br />
       <p>
