@@ -1,6 +1,16 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
-    <section className="py-24 px-12 text-center">
+    <section className="py-6 px-12 flex flex-col items-center">
+      <Image
+        priority
+        src="/images/profile.jpeg"
+        className="rounded-full mb-10"
+        height={200}
+        width={200}
+        alt="cute bois"
+      />
       <h1 className="text-5xl font-bold">WASSSUUUUUP! ✌️</h1>
       <br />
       <p>
