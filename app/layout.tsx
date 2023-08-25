@@ -32,7 +32,6 @@ export default function RootLayout({
               <Link className="mr-8" href="/side-projects">
                 Side projects
               </Link>
-              <p>Resume</p>
             </div>
           </nav>
           <main className="min-h-screen">{children}</main>
