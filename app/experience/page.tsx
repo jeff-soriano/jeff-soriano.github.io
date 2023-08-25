@@ -3,7 +3,7 @@ import GifSection from './components/GifSection'
 
 export default function Experience() {
   return (
-    <section className="px-4 pt-4">
+    <section>
       <h2 className="text-3xl font-bold">Work experience</h2>
       <table className="table-auto border-separate border-spacing-y-4">
         <tbody>

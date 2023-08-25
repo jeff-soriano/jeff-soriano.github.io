@@ -21,14 +21,18 @@ export default function RootLayout({
         className={`${newsreader.className} flex flex-col items-center content-center`}
       >
         <div className="w-10/12">
-          <main className="pt-28">
-            <section className="py-6 px-12 grid grid-cols-3 gap-4">
+          <main className="pt-28 ">
+            <section className="py-6 px-12 grid grid-cols-3 gap-4 max-h-96">
+              <h1 className="text-center text-5xl font-bold col-span-2">
+                <Link href="/">JS</Link>
+              </h1>
+              <div></div>
               <section className="px-4 pt-4 border-l-4 border-t-4 col-span-2">
                 {children}
               </section>
               <nav className="flex">
-                <div className="mt-auto ml-auto px-4 pt-4 border-l-4 border-t-4">
-                  <ul>
+                <div className="ml-auto">
+                  <ul className="px-4 pt-4 border-l-4 border-t-4">
                     <li>
                       <Link href="/about-me">About me</Link>
                     </li>
