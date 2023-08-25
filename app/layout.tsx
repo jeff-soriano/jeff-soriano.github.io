@@ -4,7 +4,7 @@ import { Newsreader } from 'next/font/google'
 import Link from 'next/link'
 import bg from '../public/images/zion.jpeg'
 
-const inter = Newsreader({ subsets: ['latin'] })
+const newsreader = Newsreader({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,23 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col items-center`}>
-        <div className="w-4/6">
-          <nav className="z-10">
-            <div className="flex justify-center pb-6 pt-8 ">
-              <Link className="mr-8" href="/about-me">
-                ABOUT ME
-              </Link>
-              <Link className="mr-8" href="/side-projects">
-                PROJECTS
-              </Link>
-            </div>
-          </nav>
+      <body
+        className={`${newsreader.className} flex flex-col items-center content-center`}
+      >
+        <div className="w-10/12">
           <main className="pt-28">{children}</main>
-          {/* <footer className="text-xs border-t p-4 text-center border-slate-200/20">
-            Designed and built by yours truly, using NextJS, Typescript, and
-            TailwindCSS :)
-          </footer> */}
         </div>
       </body>
     </html>
