@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import bg from '../public/images/zion.jpeg'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,11 +20,17 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950 flex flex-col items-center`}
+        style={{
+          backgroundImage: `url(${bg.src})`,
+          backgroundSize: 'cover',
+          // backgroundPositionY: '55%',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         <div className="w-1/2">
           <nav className="z-10 text-sm">
             <div className="flex justify-center pb-6 pt-8 ">
-              <Link className="mr-8" href="/">
+              <Link className="mr-8" href="/about-me">
                 About me
               </Link>
               <Link className="mr-8" href="/experience">
@@ -34,11 +41,11 @@ export default function RootLayout({
               </Link>
             </div>
           </nav>
-          <main className="min-h-screen">{children}</main>
-          <footer className="text-xs border-t p-4 text-center border-slate-200/20">
+          <main>{children}</main>
+          {/* <footer className="text-xs border-t p-4 text-center border-slate-200/20">
             Designed and built by yours truly, using NextJS, Typescript, and
             TailwindCSS :)
-          </footer>
+          </footer> */}
         </div>
       </body>
     </html>
