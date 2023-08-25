@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <section className="p-24 ">
+    <section>
       <p>
         I was born in Cali, but Reno NV is my hometown. I went to school there
         at the University of Nevada, Reno to obtain my degree in Computer
