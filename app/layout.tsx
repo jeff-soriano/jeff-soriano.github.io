@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Newsreader } from 'next/font/google'
 import Link from 'next/link'
-import bg from '../public/images/zion.jpeg'
 
 const newsreader = Newsreader({ subsets: ['latin'] })
 
@@ -22,7 +21,28 @@ export default function RootLayout({
         className={`${newsreader.className} flex flex-col items-center content-center`}
       >
         <div className="w-10/12">
-          <main className="pt-28">{children}</main>
+          <main className="pt-28">
+            <section className="py-6 px-12 grid grid-cols-3 gap-4">
+              <section className="px-4 pt-4 border-l-4 border-t-4 col-span-2">
+                {children}
+              </section>
+              <nav className="flex">
+                <div className="mt-auto ml-auto px-4 pt-4 border-l-4 border-t-4">
+                  <ul>
+                    <li>
+                      <Link href="/about-me">About me</Link>
+                    </li>
+                    <li>
+                      <Link href="/experience">Experience</Link>
+                    </li>
+                    <li>
+                      <Link href="/side-projects">Project</Link>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </section>
+          </main>
         </div>
       </body>
     </html>
