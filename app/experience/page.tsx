@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import GifSection from './components/GifSection'
-
 export default function Experience() {
   return (
     <section>
