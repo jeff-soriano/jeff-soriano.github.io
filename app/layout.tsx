@@ -27,12 +27,12 @@ export default function RootLayout({
                 <Link href="/">JS</Link>
               </h1>
               <div></div>
-              <section className="px-4 pt-4 border-l-4 border-t-4 col-span-2">
+              <section className="px-4 pt-4 border-l-4 border-t-4 col-span-2 border-cyan-700">
                 {children}
               </section>
               <nav className="flex">
                 <div className="ml-auto">
-                  <ul className="px-4 pt-4 border-l-4 border-t-4">
+                  <ul className="px-4 pt-4 border-l-4 border-t-4 border-cyan-700">
                     <li>
                       <Link href="/about-me">About me</Link>
                     </li>
@@ -40,7 +40,7 @@ export default function RootLayout({
                       <Link href="/experience">Experience</Link>
                     </li>
                     <li>
-                      <Link href="/side-projects">Project</Link>
+                      <Link href="/side-projects">Projects</Link>
                     </li>
                   </ul>
                 </div>
