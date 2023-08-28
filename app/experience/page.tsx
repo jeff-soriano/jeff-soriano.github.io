@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Experience() {
   return (
     <section>
@@ -18,7 +20,12 @@ export default function Experience() {
                 immigrants prepare their required forms for visas. Think
                 TurboTax but for immigration.
               </p>
-              <p className="mt-2">TypeScript • React • Ruby on Rails</p>
+              <Link className="text-cyan-600" href="/experience/boundless">
+                More details
+              </Link>
+              <p className="mt-2">
+                TypeScript • React • Redux • Ruby on Rails • PostgreSQL
+              </p>
             </td>
           </tr>
           <tr className="mt-10">
