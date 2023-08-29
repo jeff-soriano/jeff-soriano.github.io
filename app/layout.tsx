@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Newsreader } from 'next/font/google'
+import { Outfit } from 'next/font/google'
 import Link from 'next/link'
 
-const newsreader = Newsreader({ subsets: ['latin'] })
+const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,7 +24,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${newsreader.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
+        className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
       >
         <div className="w-10/12" style={{ maxWidth: '1024px' }}>
           <main className="pt-8">
