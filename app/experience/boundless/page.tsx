@@ -2,23 +2,21 @@ import GifSection from '../components/GifSection'
 
 export default function Boundless() {
   return (
-    <section className="py-6 px-12">
+    <section>
       <section className="mb-4">
-        <h1 className="text-3xl font-bold">Boundless Immigration</h1>
-        <br />
-        <ul className="mb-2 list-disc">
-          <li className="mb-2">
-            At Boundless, I started out as a front-end engineer, but quickly
-            grew to work in the back-end as well. While there I developed and
-            maintained 5 customer-facing products, one internal operations tool,
-            and one frontend library.
-          </li>
-          <li>
-            The tech stack was React/Redux written in Typescript, Ruby on Rails,
-            and PostgreSQL
-          </li>
-        </ul>
-        Here's just a few things I worked on while I was there:
+        <h1 className="text-3xl font-bold mb-2">Boundless Immigration</h1>
+
+        <p className="mb-2">
+          At Boundless, I started out as a front-end engineer, but quickly grew
+          to work in the back-end as well. While there I developed and
+          maintained 5 customer-facing products, one internal operations tool,
+          and one frontend library.
+        </p>
+        <p className="mb-2">
+          The tech stack was React/Redux written in Typescript, Ruby on Rails,
+          and PostgreSQL
+        </p>
+        <p>Here's just a few things I worked on while I was there:</p>
       </section>
       <section>
         <GifSection gif="b1b2" header="B1/B2 Travel Visa Questionnaire">
