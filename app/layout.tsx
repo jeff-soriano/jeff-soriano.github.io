@@ -24,13 +24,15 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${newsreader.className} flex flex-col items-center content-center`}
+        className={`${newsreader.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
       >
         <div className="w-10/12" style={{ maxWidth: '1024px' }}>
           <main className="pt-8">
             <section className="py-6 px-12 grid grid-cols-3 gap-4 max-h-96">
               <h1 className="text-center text-5xl font-bold col-span-2">
-                <Link href="/">JS</Link>
+                <Link className="text-white" href="/">
+                  JS
+                </Link>
               </h1>
               <div></div>
               <section className="px-4 pt-4 border-l-4 border-t-4 col-span-2 border-cyan-700">
