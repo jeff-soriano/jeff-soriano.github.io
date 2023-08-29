@@ -11,9 +11,16 @@ export default function Experience() {
             <td className="w-1/4 align-top">2021 - 2023</td>
             <td>
               <h3>
-                <strong>
-                  Senior Software Engineer - Boundless Immigration{' '}
-                </strong>
+                <a
+                  href="https://apply.boundless.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  <strong>
+                    Senior Software Engineer - Boundless Immigration{' '}
+                  </strong>
+                </a>
                 <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
@@ -22,7 +29,10 @@ export default function Experience() {
                 immigrants prepare their required forms for visas. Think
                 TurboTax but for immigration.
               </p>
-              <Link className="text-cyan-600" href="/experience/boundless">
+              <Link
+                className="text-cyan-600 hover:underline"
+                href="/experience/boundless"
+              >
                 More details
               </Link>
               <p className="mt-2">
@@ -34,7 +44,14 @@ export default function Experience() {
             <td className="w-1/4 align-top">2018 - 2020</td>
             <td>
               <h3>
-                <strong>Software Engineer II - LT Game</strong>
+                <a
+                  href="https://www.ltgame.com/en/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  <strong>Software Engineer II - LT Game</strong>
+                </a>
                 <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
@@ -49,9 +66,16 @@ export default function Experience() {
             <td className="w-1/4 align-top">2017 - 2017</td>
             <td>
               <h3>
-                <strong>
-                  Software Engineer I - International Game Technology
-                </strong>
+                <a
+                  href="https://www.igt.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  <strong>
+                    Software Engineer I - International Game Technology
+                  </strong>
+                </a>
                 <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
@@ -65,7 +89,14 @@ export default function Experience() {
             <td className="w-1/4 align-top">2016 - 2016</td>
             <td>
               <h3>
-                <strong>Software Developer - PCLender LLC</strong>
+                <a
+                  href="https://www.linkedin.com/company/pclender.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  <strong>Software Developer - PCLender LLC</strong>
+                </a>
                 <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
