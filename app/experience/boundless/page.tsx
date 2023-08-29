@@ -4,7 +4,9 @@ export default function Boundless() {
   return (
     <section>
       <section className="mb-4">
-        <h1 className="text-3xl font-bold mb-2">Boundless Immigration</h1>
+        <h1 className="text-3xl font-bold mb-2 text-white">
+          Boundless Immigration
+        </h1>
 
         <p className="mb-2">
           At Boundless, I started out as a front-end engineer, but quickly grew

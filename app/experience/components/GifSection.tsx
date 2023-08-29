@@ -9,7 +9,7 @@ interface Props {
 export default function GifSection({ children, gif, header }: Props) {
   return (
     <section className="mb-6">
-      <h2 className="text-xl font-bold mb-2">{header}</h2>
+      <h2 className="text-xl font-bold mb-2 text-white">{header}</h2>
       <Image
         priority
         className="mb-2"

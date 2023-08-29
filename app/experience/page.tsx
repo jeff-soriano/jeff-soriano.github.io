@@ -4,7 +4,7 @@ export default function Experience() {
   const externalLinkIconClasses = 'fa fa-external-link ml-2 fa-sm'
   return (
     <section>
-      <h2 className="text-3xl font-bold">Work experience</h2>
+      <h2 className="text-3xl font-bold text-white">Work experience</h2>
       <table className="table-auto border-separate border-spacing-y-4">
         <tbody>
           <tr>
