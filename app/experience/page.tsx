@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import SubPageHeader from '../components/SubPageHeader'
 
 export default function Experience() {
   const externalLinkIconClasses = 'fa fa-external-link ml-2 fa-sm'
   return (
     <section>
-      <h2 className="text-3xl font-bold text-white">Work experience</h2>
+      <SubPageHeader>Work experience</SubPageHeader>
       <table className="table-auto border-separate border-spacing-y-4">
         <tbody>
           <tr>
