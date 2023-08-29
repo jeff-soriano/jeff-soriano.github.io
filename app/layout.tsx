@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${newsreader.className} flex flex-col items-center content-center`}
       >
-        <div className="w-10/12">
+        <div className="w-10/12" style={{ maxWidth: '1024px' }}>
           <main className="pt-8">
             <section className="py-6 px-12 grid grid-cols-3 gap-4 max-h-96">
               <h1 className="text-center text-5xl font-bold col-span-2">

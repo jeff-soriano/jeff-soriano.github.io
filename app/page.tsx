@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <>
-      <h1 className="text-4xl font-bold">Hi there, my name is Jeff Soriano</h1>
+    <section>
+      <h1 className="text-4xl font-bold">Wassup, my name is Jeff Soriano</h1>
       <p className="mt-2">
         I'm a fullstack developer based out of Las Vegas, NV. I have over 7
         years of experience working across different tech stacks, but my core
@@ -14,6 +14,6 @@ export default function Home() {
         If you want to build something together, hit me up!
       </p>
       <p className="mt-2">-JS</p>
-    </>
+    </section>
   )
 }
