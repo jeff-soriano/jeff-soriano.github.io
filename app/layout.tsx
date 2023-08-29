@@ -17,6 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          src="https://kit.fontawesome.com/e2a9be5813.js"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body
         className={`${newsreader.className} flex flex-col items-center content-center`}
       >

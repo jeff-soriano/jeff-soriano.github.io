@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 export default function Experience() {
+  const externalLinkIconClasses = 'fa fa-external-link ml-2 fa-sm'
   return (
     <section>
       <h2 className="text-3xl font-bold">Work experience</h2>
@@ -11,8 +12,9 @@ export default function Experience() {
             <td>
               <h3>
                 <strong>
-                  Senior Software Engineer - Boundless Immigration
+                  Senior Software Engineer - Boundless Immigration{' '}
                 </strong>
+                <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
                 Developed 5 customer facing products, one internal product, and
@@ -33,6 +35,7 @@ export default function Experience() {
             <td>
               <h3>
                 <strong>Software Engineer II - LT Game</strong>
+                <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
                 Developed 7 slot machine games for a major gaming products
@@ -49,6 +52,7 @@ export default function Experience() {
                 <strong>
                   Software Engineer I - International Game Technology
                 </strong>
+                <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
                 Developed 2 slot machine games for one of the biggest gaming
@@ -62,6 +66,7 @@ export default function Experience() {
             <td>
               <h3>
                 <strong>Software Developer - PCLender LLC</strong>
+                <i className={externalLinkIconClasses} aria-hidden="true"></i>
               </h3>
               <p>
                 Wrote automated tests and fixed bugs in web product which helped
