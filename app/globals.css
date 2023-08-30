@@ -12,6 +12,16 @@
   transform: scale(1.2) rotate(0.01deg);
 }
 
+.nav-link {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: rgb(8 145 178);
+}
+
 @media screen and (min-width: 900px) {
   .mobile-nav {
     display: none;
@@ -56,11 +66,3 @@
     width: 100%;
   }
 }
-/*
-@media screen and (max-width: 374px) {
-  .mobile-nav {
-    font-size: 0.875rem; 
-    line-height: 1.25rem;
-  }
-}
-*/

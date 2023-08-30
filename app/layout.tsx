@@ -31,16 +31,22 @@ export default function RootLayout({
             <section className="flex flex-col h-full">
               <div className="flex pb-4 header">
                 <h1 className="text-center text-5xl font-bold main-section">
-                  <Link className="text-white" href="/">
+                  <Link className="nav-link" href="/">
                     JS
                   </Link>
                 </h1>
                 <nav className="mobile-nav text-center">
-                  <Link href="/about-me">About me</Link>
+                  <Link href="/about-me" className="nav-link">
+                    About me
+                  </Link>
                   <span className="mx-2">|</span>
-                  <Link href="/experience">Experience</Link>
+                  <Link href="/experience" className="nav-link">
+                    Experience
+                  </Link>
                   <span className="mx-2">|</span>
-                  <Link href="/side-projects">Projects</Link>
+                  <Link href="/side-projects" className="nav-link">
+                    Projects
+                  </Link>
                 </nav>
               </div>
               <div className="flex justify-between content-height">
@@ -50,13 +56,19 @@ export default function RootLayout({
                 <nav className="flex flex-col nav">
                   <ul className="px-4 pb-4 border-r-4 border-b-4 border-cyan-700 rounded mt-auto ml-auto self-end">
                     <li>
-                      <Link href="/about-me">About me</Link>
+                      <Link href="/about-me" className="nav-link">
+                        About me
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/experience">Experience</Link>
+                      <Link href="/experience" className="nav-link">
+                        Experience
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/side-projects">Projects</Link>
+                      <Link href="/side-projects" className="nav-link">
+                        Projects
+                      </Link>
                     </li>
                   </ul>
                 </nav>
