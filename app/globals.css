@@ -11,3 +11,56 @@
   -webkit-transform: scale(1.2) rotate(0.01deg);
   transform: scale(1.2) rotate(0.01deg);
 }
+
+@media screen and (min-width: 900px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .main-section {
+    width: 66.666667%;
+  }
+
+  .main-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .total-width {
+    width: 83.333333%;
+  }
+
+  .content-height {
+    height: 83.333333%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .main-section {
+    width: 100%;
+  }
+
+  .total-width {
+    width: 100%;
+  }
+}
+/*
+@media screen and (max-width: 374px) {
+  .mobile-nav {
+    font-size: 0.875rem; 
+    line-height: 1.25rem;
+  }
+}
+*/

@@ -26,24 +26,28 @@ export default function RootLayout({
       <body
         className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
       >
-        <div className="w-10/12 h-screen" style={{ maxWidth: '1024px' }}>
-          <main className="pt-8 h-full">
-            <section className="py-6 px-12 flex flex-col h-full">
-              <div className="flex pb-4">
-                <h1 className="text-center text-5xl font-bold w-2/3">
+        <div className="total-width h-screen" style={{ maxWidth: '1024px' }}>
+          <main className="main-padding pt-14 h-full">
+            <section className="flex flex-col h-full">
+              <div className="flex pb-4 header">
+                <h1 className="text-center text-5xl font-bold main-section">
                   <Link className="text-white" href="/">
                     JS
                   </Link>
                 </h1>
-                <div>
-                  <br />
-                </div>
+                <nav className="mobile-nav text-center">
+                  <Link href="/about-me">About me</Link>
+                  <span className="mx-2">|</span>
+                  <Link href="/experience">Experience</Link>
+                  <span className="mx-2">|</span>
+                  <Link href="/side-projects">Projects</Link>
+                </nav>
               </div>
-              <div className="flex justify-between h-5/6">
-                <section className="px-4 pt-4 border-l-8 border-t-8 col-span-2 border-cyan-700 rounded overflow-scroll w-2/3">
+              <div className="flex justify-between content-height">
+                <section className="px-4 pt-4 border-l-8 border-t-8 col-span-2 border-cyan-700 rounded overflow-scroll main-section">
                   {children}
                 </section>
-                <nav className="flex flex-col">
+                <nav className="flex flex-col nav">
                   <ul className="px-4 pb-4 border-r-4 border-b-4 border-cyan-700 rounded mt-auto ml-auto self-end">
                     <li>
                       <Link href="/about-me">About me</Link>
