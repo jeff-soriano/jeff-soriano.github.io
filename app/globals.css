@@ -35,11 +35,6 @@
     width: 66.666667%;
   }
 
-  .main-padding {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .total-width {
     width: 83.333333%;
   }
@@ -64,5 +59,12 @@
 
   .total-width {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .main-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
