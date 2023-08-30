@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import SubPageHeader from '../components/SubPageHeader'
 import WorkExperienceSection from './components/WorkExperienceSection'
 
