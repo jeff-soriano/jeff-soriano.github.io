@@ -6,7 +6,7 @@ export default function AboutMe() {
       <Image
         priority
         src="/images/profile.jpeg"
-        className="rounded-full mb-10 mx-auto"
+        className="rounded-full mb-4 mx-auto"
         height={200}
         width={200}
         alt="cute bois"
@@ -36,7 +36,6 @@ export default function AboutMe() {
         myself the <strong>NextJS</strong> framework!
       </p>
       <br />
-
       <p>
         Things I <strong>love</strong>: video games, barbecue, hangin' with my
         friends and family
