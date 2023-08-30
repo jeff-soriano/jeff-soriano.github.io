@@ -43,10 +43,8 @@ export default function RootLayout({
                 <section className="px-4 pt-4 border-l-8 border-t-8 col-span-2 border-cyan-700 rounded overflow-scroll w-2/3">
                   {children}
                 </section>
-                <nav className="flex flex-col self-end">
-                  {/* <div className="mx-auto"> */}
-
-                  <ul className="px-4 pb-4 border-r-4 border-b-4 border-cyan-700 rounded mt-auto ml-auto">
+                <nav className="flex flex-col">
+                  <ul className="px-4 pb-4 border-r-4 border-b-4 border-cyan-700 rounded mt-auto ml-auto self-end">
                     <li>
                       <Link href="/about-me">About me</Link>
                     </li>
@@ -57,10 +55,6 @@ export default function RootLayout({
                       <Link href="/side-projects">Projects</Link>
                     </li>
                   </ul>
-                  {/* <div className="border-r-4 border-b-4 border-cyan-700 rounded">
-                    <br />
-                  </div> */}
-                  {/* </div> */}
                 </nav>
               </div>
             </section>
