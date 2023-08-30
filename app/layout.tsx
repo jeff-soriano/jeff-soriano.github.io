@@ -24,22 +24,28 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200 h-screen`}
+        className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
       >
-        <div className="w-10/12" style={{ maxWidth: '1024px' }}>
-          <main className="pt-8">
-            <section className="py-6 px-12 grid grid-cols-3 gap-4">
-              <h1 className="text-center text-5xl font-bold col-span-2">
-                <Link className="text-white" href="/">
-                  JS
-                </Link>
-              </h1>
-              <div></div>
-              <section className="px-4 pt-4 border-l-8 border-t-8 col-span-2 border-cyan-700 rounded overflow-scroll h-5/6">
-                {children}
-              </section>
-              <nav className="flex h-5/6">
-                <div className="mx-auto flex flex-col justify-between">
+        <div className="w-10/12 h-screen" style={{ maxWidth: '1024px' }}>
+          <main className="pt-8 h-full">
+            <section className="py-6 px-12 flex flex-col h-full">
+              <div className="flex pb-4">
+                <h1 className="text-center text-5xl font-bold w-2/3">
+                  <Link className="text-white" href="/">
+                    JS
+                  </Link>
+                </h1>
+                <div>
+                  <br />
+                </div>
+              </div>
+              <div className="flex justify-between h-5/6">
+                <section className="px-4 pt-4 border-l-8 border-t-8 col-span-2 border-cyan-700 rounded overflow-scroll w-2/3">
+                  {children}
+                </section>
+                <nav className="flex flex-col self-end">
+                  {/* <div className="mx-auto"> */}
+
                   <ul className="px-4 pb-4 border-r-4 border-b-4 border-cyan-700 rounded mt-auto ml-auto">
                     <li>
                       <Link href="/about-me">About me</Link>
@@ -54,8 +60,9 @@ export default function RootLayout({
                   {/* <div className="border-r-4 border-b-4 border-cyan-700 rounded">
                     <br />
                   </div> */}
-                </div>
-              </nav>
+                  {/* </div> */}
+                </nav>
+              </div>
             </section>
           </main>
         </div>
