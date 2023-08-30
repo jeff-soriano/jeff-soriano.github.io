@@ -24,23 +24,23 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
+        className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200 h-screen`}
       >
         <div className="w-10/12" style={{ maxWidth: '1024px' }}>
           <main className="pt-8">
-            <section className="py-6 px-12 grid grid-cols-3 gap-4 max-h-96">
+            <section className="py-6 px-12 grid grid-cols-3 gap-4">
               <h1 className="text-center text-5xl font-bold col-span-2">
                 <Link className="text-white" href="/">
                   JS
                 </Link>
               </h1>
               <div></div>
-              <section className="px-4 pt-4 border-l-4 border-t-4 col-span-2 border-cyan-700">
+              <section className="px-4 pt-4 border-l-8 border-t-8 col-span-2 border-cyan-700 rounded overflow-scroll h-5/6">
                 {children}
               </section>
-              <nav className="flex">
-                <div className="mx-auto">
-                  <ul className="px-4 pt-4 border-l-4 border-t-4 border-cyan-700">
+              <nav className="flex h-5/6">
+                <div className="mx-auto flex flex-col justify-between">
+                  <ul className="px-4 pb-4 border-r-4 border-b-4 border-cyan-700 rounded mt-auto ml-auto">
                     <li>
                       <Link href="/about-me">About me</Link>
                     </li>
@@ -51,6 +51,9 @@ export default function RootLayout({
                       <Link href="/side-projects">Projects</Link>
                     </li>
                   </ul>
+                  {/* <div className="border-r-4 border-b-4 border-cyan-700 rounded">
+                    <br />
+                  </div> */}
                 </div>
               </nav>
             </section>
