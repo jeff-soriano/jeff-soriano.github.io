@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Outfit } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import Link from 'next/link'
 
-const outfit = Outfit({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Jeff Soriano',
@@ -24,7 +24,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${outfit.className} flex flex-col items-center content-center bg-gradient-to-r from-gray-950 from-90% to-blue-950 to-100% text-gray-200`}
+        className={`${inter.className} flex flex-col items-center content-center bg-gradient-to-r from-neutral-900 to-stone-950 text-zinc-100`}
       >
         <div className="total-width h-screen" style={{ maxWidth: '1024px' }}>
           <main className="main-padding pt-14 h-full">
