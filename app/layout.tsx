@@ -44,7 +44,7 @@ export default function RootLayout({
                     Experience
                   </Link>
                   <span className="mx-2">|</span>
-                  <Link href="/side-projects" className="nav-link">
+                  <Link href="/projects" className="nav-link">
                     Projects
                   </Link>
                 </nav>
@@ -66,7 +66,7 @@ export default function RootLayout({
                       </Link>
                     </li>
                     <li>
-                      <Link href="/side-projects" className="nav-link">
+                      <Link href="/projects" className="nav-link">
                         Projects
                       </Link>
                     </li>

@@ -1,6 +1,6 @@
 import SubPageHeader from '../components/SubPageHeader'
 
-export default function SideProjects() {
+export default function Projects() {
   return (
     <section>
       <SubPageHeader>Coming soon...</SubPageHeader>
