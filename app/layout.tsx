@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        <Script
           src="https://kit.fontawesome.com/e2a9be5813.js"
           crossOrigin="anonymous"
-        ></script>
+        ></Script>
       </head>
       <body
         className={`${inter.className} bg-gradient-to-r from-neutral-900 to-stone-950 text-zinc-100 `}
