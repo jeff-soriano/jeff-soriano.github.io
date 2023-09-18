@@ -1,19 +1,28 @@
-import SubPageHeader from '../components/SubPageHeader'
+import Project from './components/project'
 
 export default function Projects() {
   return (
-    <section>
-      <SubPageHeader>Coming soon...</SubPageHeader>
-      <p className="mt-2">
-        There's nothing yet here that accurately displays my current skills, but
-        in the past I've built a simple CRUD app to document your pets using
-        React and NodeJS, as well as a mini-game for an Among Us themed
-        halloween party using straight up Javascript and jQuery.
-      </p>
-      <p className="mt-2">
-        I'm currently teaching myself NextJS so my next projects will be based
-        around that. Check back here soon!
-      </p>
-    </section>
+    <div>
+      <Project
+        title="PetBase"
+        description="PetBase is a simple CRUD app for your pets. You can make your own account and add your pets to a simple interface."
+        tech="React, Bootstrap, NodeJS, Express, mongoDB, auth0, AWS S3"
+        githubLink="https://github.com/jeff-soriano/petbase"
+      />
+      <br />
+      <Project
+        title="Squad-do"
+        description="Squad-do is a to-do list meant for teams. In other words, multiple people have access to the same to-do list, and everyone can add, cross off, or delete items concurrently."
+        tech="JavaScript, React, Express, NodeJS, mongoDB, socket.io, Material-UI, Heroku"
+        githubLink="https://github.com/jeff-soriano/squad-do"
+      />
+      <br />
+      <Project
+        title="Felinder"
+        description="Simple landing page for imaginary Tinder for people who want to find cats to pet."
+        tech="HTML5, CSS3, Bootstrap"
+        githubLink="https://github.com/jeff-soriano/felinder"
+      />
+    </div>
   )
 }
