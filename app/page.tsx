@@ -40,10 +40,10 @@ export default function Home() {
             />
           </h1>
           <div className="my-16 text-center">
-            <h2 className="text-zinc-500 animate-fade-in">
+            <h3 className="text-zinc-500 animate-fade-in">
               Hi, my name is Jeff. I'm a fullstack developer looking to build
               stuff that makes a positive impact
-            </h2>
+            </h3>
           </div>
         </section>
       </main>

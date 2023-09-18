@@ -1,4 +1,3 @@
-import SubPageLayout from '@/app/components/SubPageLayout'
 import GifSection from '../components/GifSection'
 
 export default function Boundless() {
