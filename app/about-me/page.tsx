@@ -3,23 +3,7 @@ import Link from 'next/link'
 
 export default function AboutMe() {
   return (
-    <div className="mx-auto max-w-xl">
-      <nav className="flex justify-between pt-4 items-center">
-        <div className="duration-200 text-zinc-400 hover:text-zinc-100 text-2xl">
-          <Link href="/">{'<-'}</Link>
-        </div>
-        <div>
-          <ul className="flex gap-x-3 text-sm">
-            <li className="duration-200 text-zinc-400 hover:text-zinc-100">
-              <Link href="/about-me">About me</Link>
-            </li>
-            <li className="duration-200 text-zinc-400 hover:text-zinc-100">
-              <Link href="/projects">Projects</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 className="mt-14 mb-7">About</h1>
+    <div>
       <Image
         priority
         src="/images/profile.jpeg"
@@ -63,9 +47,6 @@ export default function AboutMe() {
           Things I <strong>hate</strong>: styrofoam, losing the Amazon Firestick
           remote
         </p>
-      </div>
-      <div className="flex justify-between py-8">
-        <p className="text-zinc-600 text-xs">2023 © Jeff Soriano</p>
       </div>
     </div>
   )
