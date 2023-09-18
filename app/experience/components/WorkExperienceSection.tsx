@@ -45,7 +45,7 @@ export default function WorkExperienceSection({
         )}
         <p className="mt-2">
           {skills.map((skill, index) => (
-            <span>
+            <span key={index}>
               {skill} {index !== skills.length - 1 && '• '}
             </span>
           ))}
