@@ -1,12 +1,23 @@
-import GifSection from '../../projects/components/GifSection'
+import SubPageLayout from '@/app/components/SubPageLayout'
+import GifSection from '../components/GifSection'
 
 export default function Boundless() {
   return (
     <section>
       <section className="mb-4">
-        <h1 className="text-3xl font-bold mb-2 text-white">
-          Boundless Immigration
-        </h1>
+        <div className="mt-14 mb-7">
+          <h1 className="mb-2"> Boundless Immigration</h1>
+          <p>
+            <a
+              href={'https://apply.boundless.com/'}
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Website
+            </a>
+          </p>
+        </div>
 
         <p className="mb-2">
           At Boundless, I started out as a front-end engineer, but quickly grew

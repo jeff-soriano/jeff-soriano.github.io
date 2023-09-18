@@ -3,6 +3,17 @@ import Project from './components/project'
 export default function Projects() {
   return (
     <div>
+      <div className="mt-14 mb-7">
+        <h1 className="mb-2">Projects</h1>
+        <p>Some projects from work/personal time</p>
+      </div>
+      <Project
+        title="Boundless Immigration"
+        description="Helps immigrants get visas to come to the United States. Think TurboTax for immigrants."
+        tech="Typescript, React, Redux, Tailwind, Material UI, Ruby on Rails, PostgreSQL"
+        link="/projects/boundless"
+      />
+      <br />
       <Project
         title="PetBase"
         description="PetBase is a simple CRUD app for your pets. You can make your own account and add your pets to a simple interface."

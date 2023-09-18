@@ -1,6 +1,9 @@
 export default function Contact() {
   return (
     <div>
+      <div className="mt-14 mb-7">
+        <h1 className="mb-2">Contact</h1>
+      </div>
       <p>
         Github{' '}
         <a

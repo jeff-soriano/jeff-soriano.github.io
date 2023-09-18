@@ -37,7 +37,9 @@ export default function Project({
       )}
       {link && (
         <p>
-          <Link href={link}>Read more</Link>
+          <Link className="underline" href={link}>
+            Read more
+          </Link>
         </p>
       )}
     </div>

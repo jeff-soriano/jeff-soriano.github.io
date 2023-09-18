@@ -3,10 +3,9 @@ import { ReactNode } from 'react'
 
 interface Props {
   children: ReactNode
-  heading: string
 }
 
-export default function SubPageLayout({ children, heading }: Props) {
+export default function SubPageLayout({ children }: Props) {
   const navClasses = 'duration-200 text-zinc-400 hover:text-zinc-100'
   return (
     <div className="mx-auto max-w-xl">
@@ -28,7 +27,6 @@ export default function SubPageLayout({ children, heading }: Props) {
           </ul>
         </div>
       </nav>
-      <h1 className="mt-14 mb-7">{heading}</h1>
       {children}
       <div className="flex justify-between py-8 mt-16 border-t border-zinc-800">
         <p className="text-zinc-600 text-xs">2023 © Jeff Soriano</p>
