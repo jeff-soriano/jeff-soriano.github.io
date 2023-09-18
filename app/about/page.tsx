@@ -12,7 +12,7 @@ export default function About() {
         alt="cute bois"
       />
 
-      <div className="border-b pb-16 border-zinc-800">
+      <div>
         <p>
           I was born in Cali, but Reno NV is my hometown. I went to school there
           at the University of Nevada, Reno to obtain my{' '}

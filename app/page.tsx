@@ -8,18 +8,19 @@ import Particles from './components/particles'
 const nunitoSans = Nunito_Sans({ subsets: ['latin'] })
 
 export default function Home() {
+  const navClasses = 'text-zinc-500 duration-500 hover:text-zinc-300'
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen">
       <nav className="my-16">
         <ul className="flex items-center justify-center gap-4 text-sm animate-fade-in">
-          <li className="text-zinc-500 duration-500 hover:text-zinc-300">
+          <li className={navClasses}>
             <Link href="/about">About</Link>
           </li>
-          <li className="text-zinc-500 duration-500 hover:text-zinc-300">
-            <Link href="/experience">Experience</Link>
-          </li>
-          <li className="text-zinc-500 duration-500 hover:text-zinc-300">
+          <li className={navClasses}>
             <Link href="/projects">Projects</Link>
+          </li>
+          <li className={navClasses}>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
