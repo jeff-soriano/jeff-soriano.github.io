@@ -16,7 +16,7 @@ export default function SubPageLayout({ children, heading }: Props) {
         <div>
           <ul className="flex gap-x-3 text-sm">
             <li className="duration-200 text-zinc-400 hover:text-zinc-100">
-              <Link href="/about-me">About me</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="duration-200 text-zinc-400 hover:text-zinc-100">
               <Link href="/projects">Projects</Link>

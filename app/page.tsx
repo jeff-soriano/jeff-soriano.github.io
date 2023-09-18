@@ -13,7 +13,7 @@ export default function Home() {
       <nav className="my-16">
         <ul className="flex items-center justify-center gap-4 text-sm animate-fade-in">
           <li className="text-zinc-500 duration-500 hover:text-zinc-300">
-            <Link href="/about-me">About me</Link>
+            <Link href="/about">About</Link>
           </li>
           <li className="text-zinc-500 duration-500 hover:text-zinc-300">
             <Link href="/experience">Experience</Link>
