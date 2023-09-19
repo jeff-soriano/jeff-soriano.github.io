@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div>
       <div className="mt-14 mb-7">
-        <h1 className="mb-2">Contact</h1>
+        <h1 className="mb-2">About</h1>
       </div>
       <Image
         priority
