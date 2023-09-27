@@ -6,6 +6,7 @@ interface Props {
   tech: string
   githubLink?: string
   link?: string
+  websiteLink?: string
 }
 
 export default function Project({
@@ -14,6 +15,7 @@ export default function Project({
   tech,
   githubLink,
   link,
+  websiteLink,
 }: Props) {
   return (
     <div>
@@ -23,24 +25,30 @@ export default function Project({
       <br />
       <p className="text-zinc-500">{tech}</p>
       <br />
+      {websiteLink && (
+        <a
+          href={websiteLink}
+          target="_blank"
+          rel="noreferrer"
+          className="underline mr-3"
+        >
+          Website
+        </a>
+      )}
       {githubLink && (
-        <p>
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noreferrer"
-            className="underline"
-          >
-            Github
-          </a>
-        </p>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noreferrer"
+          className="underline mr-3"
+        >
+          Github
+        </a>
       )}
       {link && (
-        <p>
-          <Link className="underline" href={link}>
-            Read more
-          </Link>
-        </p>
+        <Link className="underline" href={link}>
+          Read more
+        </Link>
       )}
     </div>
   )

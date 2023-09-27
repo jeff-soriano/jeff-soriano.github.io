@@ -15,6 +15,14 @@ export default function Projects() {
       />
       <br />
       <Project
+        title="Wikipedia Top Results"
+        description="Fetches from a wikipedia API to get the top results from a selected day"
+        tech="Typescript, React, Tailwind"
+        githubLink="https://github.com/jeff-soriano/wikipedia-page-views-ts"
+        websiteLink="https://wikipedia-page-views-ts.vercel.app/"
+      />
+      <br />
+      <Project
         title="PetBase"
         description="PetBase is a simple CRUD app for your pets. You can make your own account and add your pets to a simple interface."
         tech="React, Bootstrap, NodeJS, Express, mongoDB, auth0, AWS S3"
