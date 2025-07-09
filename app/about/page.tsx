@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -18,7 +18,7 @@ export default function About() {
       <div>
         <p>
           I was born in Cali, but Reno NV is my hometown. I went to school there
-          at the University of Nevada, Reno to obtain my{' '}
+          at the University of Nevada, Reno to obtain my{" "}
           <strong>degree in Computer Science & Engineering</strong>. Shortly
           afterward I worked in the gaming industry for a few years. Then I
           moved to Las Vegas, which is where I live now.
@@ -29,16 +29,15 @@ export default function About() {
           I decided I wanted to work on web-based products and for companies
           that had a mission that reached beyond profits. In a few short months
           I taught myself <strong>React and NodeJS</strong>, which helped me
-          land a job at Boundless Immigration. There, my skills grew to include{' '}
+          land a job at Boundless Immigration. There, my skills grew to include{" "}
           <strong>Ruby on Rails</strong>.
         </p>
         <br />
 
         <p>
-          I'm looking forward to learning more things. I'm a fullstack developer
-          with a slight preference towards the frontend. Right now I'm teaching
-          myself the <strong>NextJS</strong> framework, which is what this site
-          was built in!
+          I'm looking forward to learning more things. I'm a frontend developer
+          who's always looking to expand my skillset. Right now I'm messing
+          around with <strong>AI</strong> (along with everyone else, lol).
         </p>
         <br />
         <p>
@@ -51,5 +50,5 @@ export default function About() {
         </p>
       </div>
     </div>
-  )
+  );
 }

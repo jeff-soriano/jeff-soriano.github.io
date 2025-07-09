@@ -41,7 +41,7 @@ export default function Home() {
           </h1>
           <div className="my-16 text-center">
             <h3 className="text-zinc-500 animate-fade-in">
-              Hi, my name is Jeff. I'm a fullstack developer looking to build
+              Hi, my name is Jeff. I'm a frontend developer looking to build
               stuff that makes a positive impact
             </h3>
           </div>
