@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   src: string;
   header: string;
 }
@@ -18,7 +18,7 @@ export default function ImageSection({ children, src, header }: Props) {
         width={850}
         alt="travel visa questionnaire gif"
       />
-      <p>{children}</p>
+      {children && <p>{children}</p>}
     </section>
   );
 }
